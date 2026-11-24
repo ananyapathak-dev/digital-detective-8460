@@ -3,7 +3,7 @@
 A learning project about computer systems, Terminal, operating systems, Python, data representation, GitHub and networks.
 
 ## Mission index
-- [Mission 0: Workspace setup](mission-00-setup/README.md) — Local folder structure prepared; GitHub publishing pending.
+- [Mission 0: Workspace setup](mission-00-setup/README.md) — Local folder structure prepared; Initial setup has been pushed to GitHub
 - [Mission 1: Computer basics](mission-01-computer-basics/README.md) — Not started.
 - [Mission 2: Terminal](mission-02-terminal/README.md) — Not started.
 - [Mission 3: Operating system](mission-03-operating-system/README.md) — Not started.
