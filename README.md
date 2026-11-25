@@ -14,3 +14,9 @@ A learning project about computer systems, Terminal, operating systems, Python, 
 - [Mission 8: Final report](mission-08-final-report/README.md) — Not started.
 
 Missions will be completed in order. Each mission's work and notes will be saved in its folder.
+
+## My Learning
+- How computers turn user inputs into processed outputs and store data across memory and disk (IPOS).
+- How to navigate folders, manage files safely, and combine commands with flags and pipes in Terminal.
+- How decimal, binary, and hexadecimal numbers map to one another and how Python can automate conversions.
+
