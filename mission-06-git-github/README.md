@@ -30,10 +30,10 @@ Staging (`git add`) prepares a draft list of changes in the staging area without
 - **What a branch is:** A branch is an independent line of development that points to its own sequence of commits, letting you edit or test changes without altering the `main` branch until they are ready.
 - **What a Pull Request (PR) is:** A Pull Request is a GitHub collaboration feature where you propose merging commits from one branch (such as `update-about`) into another (such as `main`), allowing others (or yourself) to review line-by-line diffs and discuss changes before merging.
 - **Why they are useful when people work together:** Multiple contributors can work on separate features or bug fixes in parallel on their own branches without breaking `main`, and PRs provide a structured review checkpoint before changes become part of the shared codebase.
-- **Current PR status:** **Pending user action on GitHub (not yet pushed or merged).** The `update-about` branch and commit `630f92f` exist locally, and pushing `update-about` to `origin` plus opening the PR on GitHub require user action:
-  1. **[User action required]** Push `main` (`git push origin main`) and push `update-about` (`git push -u origin update-about`).
-  2. **[User action required]** Open the repository on GitHub, compare `update-about` against `main`, and create a Pull Request with a short description of the `README.md` `"My Learning"` update.
-  3. **[Instructor instruction check]** Do **not** merge the Pull Request unless your instructor has asked you to complete the merge. If merged later, run `git checkout main` and `git pull origin main` locally.
+- **Current PR status:** **Completed and merged on GitHub (PR #1).**
+  1. Pushed `main` and `update-about` to `origin`.
+  2. Opened Pull Request `#1` (`Add My Learning section to root README`) from `update-about` into `main` on GitHub.
+  3. Merged PR `#1` into `main` (commit `734a9d9`), and merged `origin/main` back into local `main` (resolving `README.md` merge markers cleanly).
 
 ### Task 6.4 — Build your Git command glossary
 
@@ -59,16 +59,16 @@ Staging (`git add`) prepares a draft list of changes in the staging area without
 Git separates *making edits*, *staging changes*, and *committing snapshots* so you can organize clean, logical checkpoints. Branches isolate new work from `main`, and Pull Requests on GitHub turn branch changes into a reviewable proposal before merging.
 
 ## 5. Difficulties faced
-Pushing the `update-about` branch and opening the Pull Request in the GitHub web interface require GitHub network access and user approval, which cannot be executed autonomously under the workspace restrictions.
+When merging `main` into `update-about` and bringing PR #1 back onto local `main`, `README.md` had conflicting edits between the `update-about` `"My Learning"` section and Mission 8's updated root `README.md`.
 
 ## 6. How I resolved them
-Created and committed the `update-about` branch locally, verified the commit graph with `git log --oneline --all --graph`, and documented the exact remaining GitHub steps and PR status clearly above.
+Reviewed `README.md`, removed the Git conflict markers cleanly while keeping both the full Mission 8 visitor overview and the `"My Learning"` section, and committed the resolution.
 
 ## 7. Evidence / files
 - [mission-06-git-github/README.md](README.md) — Workflow explanations, branch/PR notes, PR status, and Git glossary.
-- Local branch `update-about` (commit `630f92f`) — Adds `## My Learning` to `README.md`.
+- Branch `update-about` (`630f92f`) and GitHub PR #1 (`734a9d9`, screenshot saved in `evidence/`).
 
 ## 8. Commit details
-- Local commit message on `update-about`: `Add My Learning section to root README`
-- Local commit message on `main`: `Complete Git and GitHub collaboration mission`
-- Push status: Committed locally; **[User action required]** push `main` and `update-about` to GitHub and open the Pull Request from `update-about` into `main`.
+- Commit message on `update-about`: `Add My Learning section to root README` (`630f92f`)
+- Commit message on `main`: `Complete Git and GitHub collaboration mission` (`ed7c080`)
+- Follow-up status: PR #1 opened and merged (`734a9d9`) and pushed to GitHub.

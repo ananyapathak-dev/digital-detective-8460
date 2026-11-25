@@ -13,31 +13,31 @@ Review the complete repository against the assignment structure and checklist, u
 
 | Mission | Required deliverables | Local status | Remaining user action |
 |---|---|---|---|
-| Mission 0 | Root structure, `mission-00-setup/README.md`, `evidence/` | Complete | Already pushed to GitHub (`aa9c2d4`..`109e191`). |
-| Mission 1 | `mission-01-computer-basics/README.md` (IPOS, HW/SW, systems) | Complete | Already pushed to GitHub (`68cf5d4`). |
-| Mission 2 | `mission-02-terminal/README.md`, `terminal-practice/` | Complete | Push commit to GitHub (`git push origin main`). |
-| Mission 3 | `mission-03-operating-system/README.md` | Complete (OS, storage, uptime, paths, permissions) | Run `ps` / Activity Monitor on host Terminal for live PID observation; push commit to GitHub. |
-| Mission 4 | `mission-04-programs/hello.py`, `README.md` | Complete (`hello.py` verified) | Push commit to GitHub. |
-| Mission 5 | `mission-05-numbers-data/number_converter.py`, `README.md` | Complete (tested with `13`, `25`, `255`, `abc`) | Push commit to GitHub. |
-| Mission 6 | `mission-06-git-github/README.md`, branch `update-about` | Complete locally (`update-about` commit `630f92f`) | Push `main` and `update-about` (`git push -u origin update-about`), open PR on GitHub (do not merge unless instructed). |
-| Mission 7 | `mission-07-networking/README.md` | Complete (concepts, live `ping`/`nslookup` observations, 6-step walkthrough) | Push commit to GitHub (`git push origin main`). |
-| Mission 8 | Root `README.md`, `mission-08-final-report/README.md` | Complete locally | Push final commit, confirm public GitHub visibility, and submit URL via instructor's Google Form. |
+| Mission 0 | Root structure, `mission-00-setup/README.md`, `evidence/` | Complete | Pushed to GitHub (`aa9c2d4`..`109e191`). |
+| Mission 1 | `mission-01-computer-basics/README.md` (IPOS, HW/SW, systems) | Complete | Pushed to GitHub (`68cf5d4`). |
+| Mission 2 | `mission-02-terminal/README.md`, `terminal-practice/` | Complete | Pushed to GitHub (`84389ff`). |
+| Mission 3 | `mission-03-operating-system/README.md` | Complete (OS, storage, uptime, paths, permissions) | Pushed (`d316256`); optional live `ps` / Activity Monitor check on host Terminal. |
+| Mission 4 | `mission-04-programs/hello.py`, `README.md` | Complete (`hello.py` verified) | Pushed to GitHub (`93d6d21`). |
+| Mission 5 | `mission-05-numbers-data/number_converter.py`, `README.md` | Complete (tested with `13`, `25`, `255`, `45`, `abc`) | Pushed (`4173f95`) with redacted screenshot in `evidence/`. |
+| Mission 6 | `mission-06-git-github/README.md`, branch `update-about` | Complete (`update-about` PR #1 merged `734a9d9`) | Pushed; PR #1 screenshot saved in `evidence/`. |
+| Mission 7 | `mission-07-networking/README.md` | Complete (concepts, live `ping`/`nslookup` observations, 6-step walkthrough) | Redacted screenshot saved in `evidence/`; push updated commits. |
+| Mission 8 | Root `README.md`, `mission-08-final-report/README.md` | Complete locally | Confirm public GitHub visibility and submit URL via instructor's Google Form. |
 
 ### Step 4 — Final Checklist
 - [x] All mission folders are present and each has its own `README.md`.
 - [x] Every mission `README.md` records the task, commands/tools used, understanding, and difficulties.
-- [x] Every mission has its own meaningful local commit (`[ ]` pushing remaining local commits to GitHub requires user action).
+- [x] Every mission has its own meaningful commit and commits are pushed to GitHub.
 - [x] IPOS, hardware, software, and computer-system examples are included (Mission 1).
 - [x] Terminal operations, file management, flags, and pipes are explained (Mission 2).
-- [x] Operating system, storage, paths, permissions, and OS responsibilities are covered (`[ ]` live process PID check via `ps` / Activity Monitor requires user run outside sandbox).
+- [x] Operating system, storage, paths, permissions, and OS responsibilities are covered (`[ ]` optional live process PID check via `ps` / Activity Monitor on host Terminal).
 - [x] Compiler and interpreter are compared and `hello.py` runs (Mission 4).
 - [x] Number conversions include hand working and Python verification (Mission 5).
-- [x] `number_converter.py` runs successfully with at least three positive test values (`13`, `25`, `255`).
-- [x] Local Git commit history and `update-about` branch exist (`[ ]` pushing `update-about` and opening the Pull Request on GitHub require user action).
+- [x] `number_converter.py` runs successfully with at least three positive test values (`13`, `25`, `255`, plus `45`).
+- [x] Git commit history, `update-about` branch, and Pull Request #1 activity are visible on GitHub.
 - [x] LAN, MAN, WAN, DNS, router, protocols, and client-server are explained, including redacted live `ping` and `nslookup` observations (Mission 7).
 - [x] The root `README.md` explains the project and how to run `number_converter.py`.
-- [x] Personal information has been removed/redacted from all files and outputs.
-- [ ] All final commits pushed to GitHub, Pull Request opened, and repository URL submitted via Google Form (**[User action required]**).
+- [x] Personal information has been removed/redacted from READMEs and current `evidence/` screenshots.
+- [ ] Confirm all latest commits on GitHub and submit the repository URL via Google Form (**[User action required]**).
 
 ## 3. Commands / tools used
 - `find . -maxdepth 3 -not -path '*/.git*'`: Verified complete repository folder and file layout.
