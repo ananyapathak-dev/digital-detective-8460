@@ -21,7 +21,7 @@ Each mission was completed, documented in its own `README.md`, and recorded with
 - [Mission 4: Programs](mission-04-programs/README.md) — Completed locally (push pending)
 - [Mission 5: Numbers and data](mission-05-numbers-data/README.md) — Completed locally (push pending)
 - [Mission 6: Git and GitHub](mission-06-git-github/README.md) — Completed locally on `main` & `update-about` (push & PR pending)
-- [Mission 7: Networking](mission-07-networking/README.md) — Completed locally (live `ping`/`nslookup` check & push pending)
+- [Mission 7: Networking](mission-07-networking/README.md) — Completed locally with live `ping`/`nslookup` observations (push pending)
 - [Mission 8: Final report](mission-08-final-report/README.md) — Completed locally (push & form submission pending)
 
 ## Running the Number Converter
