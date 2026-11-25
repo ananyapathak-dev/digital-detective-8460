@@ -22,11 +22,29 @@ Explain foundational networking concepts (`LAN`, `MAN`, `WAN`, `DNS`, `Router`, 
 | `Client-server` | A communication model where a client program requests a resource or service and a server program processes the request and sends back a response. | Your web browser (client) requesting a page from a website's web server. |
 
 ### Task 7.2 — Observe network information
-- **Offline execution note:** Testing `ping -c 2 example.com` inside the offline workspace sandbox returned `ping: cannot resolve example.com: Unknown host`, and `nslookup example.com` could not reach a network DNS server. No live IP address, Wi-Fi name, or fabricated output is included.
-- **[User action required — practical verification]:** From your connected macOS Terminal, run:
-  1. `ping -c 3 example.com`
-  2. `nslookup example.com`
-  Record the public `example.com` observations here if desired, making sure to redact any personal/local router IP addresses or Wi-Fi details.
+- **Live Terminal observations (prompt redacted for privacy):**
+  Ran `ping -c 4 google.com` and `nslookup google.com`:
+
+  ```text
+  [redacted]@[redacted] digital-detective-8460 % ping -c 4 google.com
+  PING google.com (142.251.106.102): 56 data bytes
+  64 bytes from 142.251.106.102: icmp_seq=0 ttl=108 time=50.232 ms
+  64 bytes from 142.251.106.102: icmp_seq=1 ttl=108 time=23.414 ms
+  64 bytes from 142.251.106.102: icmp_seq=2 ttl=108 time=24.128 ms
+  64 bytes from 142.251.106.102: icmp_seq=3 ttl=108 time=24.827 ms
+
+  --- google.com ping statistics ---
+  4 packets transmitted, 4 packets received, 0.0% packet loss
+  round-trip min/avg/max/stddev = 23.414/30.650/50.232/11.317 ms
+
+  [redacted]@[redacted] digital-detective-8460 % nslookup google.com
+  Server:         8.8.8.8
+  Address:        8.8.8.8#53
+
+  Non-authoritative answer:
+  Name:   google.com
+  Address: 142.251.222.142
+  ```
 
 Answers:
 - **What a connectivity test helps you check:** A connectivity test (such as `ping`) checks whether your computer can reach another host over a network and receive replies, helping verify basic network reachability, packet loss, and round-trip latency.
@@ -42,22 +60,23 @@ Answers:
 6. **Client renders the page:** Your browser (**client**) reassembles the response packets, verifies the `HTTPS` security session, and displays the finished web page on your screen.
 
 ## 3. Commands / tools used
-- `ping -c 2 example.com`: Tested basic reachability in the sandboxed environment (returned `Unknown host` offline; documented for user execution on a live network).
-- `nslookup example.com`: Intended DNS lookup command to map a domain name to its public IP address (requires live network).
+- `ping -c 4 google.com`: Verified live network reachability (`4 packets transmitted, 4 packets received, 0.0% packet loss`, average round-trip time `30.650 ms`).
+- `nslookup google.com`: Queried DNS server `8.8.8.8` (port `53`) and resolved `google.com` to public IP address `142.251.222.142`.
 - `git add` and `git commit`: Stages and commits Mission 7 documentation locally.
 
 ## 4. My understanding
 Networks connect devices at different scales (LAN, MAN, WAN) using shared protocols so computers of all kinds can communicate. Packet switching splits messages efficiently across routers, DNS turns memorable names into IP addresses, and the client-server model structures how browsers request and display websites.
 
 ## 5. Difficulties faced
-External network access and DNS resolution are disabled in the sandboxed execution environment (`ping: cannot resolve example.com: Unknown host`), so live `ping` and `nslookup` outputs for `example.com` could not be captured directly here.
+No major difficulties once tested on a live network connection (an initial test in an offline sandbox returned `Unknown host`, and the live Terminal prompt username/device name was redacted before saving).
 
 ## 6. How I resolved them
-Recorded the exact offline command result honestly without inventing network outputs, explained the concepts clearly, and listed the two live Terminal commands (`ping -c 3 example.com` and `nslookup example.com`) as a short user verification task.
+Ran `ping -c 4 google.com` and `nslookup google.com` in the live macOS Terminal and replaced the username and device name in the prompt with `[redacted]@[redacted]`.
 
 ## 7. Evidence / files
-- [mission-07-networking/README.md](README.md) — Network concepts table, connectivity/DNS notes, and 6-step website loading walkthrough.
+- [mission-07-networking/README.md](README.md) — Network concepts table, live privacy-safe `ping`/`nslookup` observations, and 6-step website loading walkthrough.
 
 ## 8. Commit details
 - Local commit message: `Explain networking concepts and website communication`
+- Follow-up commit message: `Add live ping and nslookup observations to Mission 7`
 - Push status: Committed locally; **[User action required]** push to GitHub (`git push origin main`) and confirm on GitHub.
